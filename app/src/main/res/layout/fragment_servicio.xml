@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".ui.Servicio.ServicioFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Nombre y Apellido -->
+        <TextView
+            android:id="@+id/textNombreApellido"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nombre: [Nombre] [Apellido]"
+            android:textSize="20sp"
+            android:textColor="@color/textPrimary"
+            android:layout_marginBottom="8dp"
+            android:textStyle="bold" />
+
+        <!-- Ciudad -->
+        <TextView
+            android:id="@+id/textCiudad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ciudad: [Ciudad]"
+            android:textSize="18sp"
+            android:textColor="@color/textSecondary"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Calle Principal -->
+        <TextView
+            android:id="@+id/textCallePrincipal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calle Principal: [Calle Principal]"
+            android:textSize="18sp"
+            android:textColor="@color/textSecondary"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Calle Secundaria -->
+        <TextView
+            android:id="@+id/textCalleSecundaria"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calle Secundaria: [Calle Secundaria]"
+            android:textSize="18sp"
+            android:textColor="@color/textSecondary"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Referencia -->
+        <TextView
+            android:id="@+id/textReferencia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Referencia: [Referencia]"
+            android:textSize="18sp"
+            android:textColor="@color/textSecondary"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Tipo de Servicio -->
+        <TextView
+            android:id="@+id/textTipoServicio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tipo de Servicio: [Fibra Óptica / Inalámbrica]"
+            android:textSize="18sp"
+            android:textColor="@color/textSecondary"
+            android:layout_marginBottom="24dp" />
+
+    </LinearLayout>
+</FrameLayout>
