@@ -127,7 +127,7 @@ public class MenuCliente extends AppCompatActivity {
         @Override
         protected String doInBackground(String... params) {
             String cedula = params[0];
-            String url = "http://10.0.2.2:8080/PoyectoAula/obtenerUser.php"; // Ajusta la IP según sea necesario
+            String url = "http://169.254.132.108:8080/PoyectoAula/obtenerUser.php"; // Ajusta la IP según sea necesario
             try {
                 URL obj = new URL(url);
                 HttpURLConnection con = (HttpURLConnection) obj.openConnection();
@@ -166,26 +166,30 @@ public class MenuCliente extends AppCompatActivity {
                 try {
                     JSONObject jsonResponse = new JSONObject(result);
 
+                    String mensaje = jsonResponse.optString("mensaje");
+                    if (!mensaje.isEmpty()) {
+                        Toast.makeText(MenuCliente.this, mensaje, Toast.LENGTH_SHORT).show();
+                        return;
+                    }
+
                     String tipoUsuario = jsonResponse.optString("tipo_usuario");
                     String nombre = jsonResponse.optString("nombre");
+                    String correo = jsonResponse.optString("correo");
+                    String cedula = jsonResponse.optString("cedula");
 
                     // Guardar datos en SharedPreferences
                     SharedPreferences sharedPreferences = getSharedPreferences("user_info", Context.MODE_PRIVATE);
                     SharedPreferences.Editor editor = sharedPreferences.edit();
                     editor.putString("nombre", nombre);
-
                     if (tipoUsuario.equals("CLIENTE")) {
-                        String correo = jsonResponse.optString("correo");
                         txtUsuario.setText(nombre);
                         txtCorreo.setText(correo);
                         editor.putString("correo", correo);
                     } else if (tipoUsuario.equals("SOPORTE") || tipoUsuario.equals("TECNICO")) {
-                        String cedula = jsonResponse.optString("cedula");
                         txtUsuario.setText(nombre);
                         txtCorreo.setText(cedula); // Usar txtCorreo para mostrar la cédula
                         editor.putString("cedula", cedula);
                     }
-
                     editor.apply();
 
                 } catch (Exception e) {
@@ -197,5 +201,4 @@ public class MenuCliente extends AppCompatActivity {
             }
         }
     }
-
 }

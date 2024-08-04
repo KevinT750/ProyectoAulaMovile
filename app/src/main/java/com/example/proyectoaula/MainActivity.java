@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
 
         btnIniciarSesion.setOnClickListener(view -> {
             if (validateInput()) {
-                iniciarSesion("http://192.168.0.102:8080/PoyectoAula/Login.php");
+                iniciarSesion("http://169.254.132.108:8080/PoyectoAula/Login.php");
             }
         });
     }

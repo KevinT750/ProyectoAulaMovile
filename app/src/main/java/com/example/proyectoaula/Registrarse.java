@@ -149,7 +149,7 @@ public class Registrarse extends AppCompatActivity {
 
         btnRegistrar.setOnClickListener(view -> {
             if (validateInput()) {
-                registrarUsuario("http://192.168.0.102:8080/PoyectoAula/IngresarCliente.php");
+                registrarUsuario("http://169.254.132.108:8080/PoyectoAula/IngresarCliente.php");
             }
         });
     }

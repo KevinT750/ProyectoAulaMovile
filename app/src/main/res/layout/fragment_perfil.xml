@@ -3,93 +3,228 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp"
-    android:background="@color/backgroundColor">
+    android:background="@drawable/background_gradient"
+    android:padding="16dp">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:background="@drawable/gradient_background"
+        android:orientation="vertical"
+        android:padding="16dp">
 
         <!-- Avatar -->
         <ImageView
             android:id="@+id/imageView4"
-            android:layout_width="362dp"
-            android:layout_height="216dp"
-            app:srcCompat="@drawable/personas"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginBottom="16dp" />
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="24dp"
+            app:srcCompat="@drawable/personas" />
 
-        <!-- Nombre -->
-        <TextView
-            android:id="@+id/textNombre"
-            android:layout_width="wrap_content"
+        <!-- Información de usuario -->
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:text="Nombre: [Nombre]"
-            android:textColor="@color/textPrimary"
-            android:textSize="24sp"
-            android:textStyle="bold" />
+            android:orientation="vertical">
 
-        <!-- Apellido -->
-        <TextView
-            android:id="@+id/textApellido"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Apellido: [Apellido]"
-            android:textSize="24sp"
-            android:textColor="@color/textPrimary"
-            android:layout_marginBottom="8dp" />
+            <!-- Nombre -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:orientation="vertical">
 
-        <!-- Número de Teléfono -->
-        <TextView
-            android:id="@+id/textTelefono"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Número de Teléfono: [Número de Teléfono]"
-            android:textSize="18sp"
-            android:textColor="@color/textSecondary"
-            android:layout_marginBottom="8dp" />
+                <TextView
+                    android:id="@+id/textNombre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nombre:"
+                    android:textColor="@color/textPrimary"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
 
-        <!-- Contraseña -->
-        <TextView
-            android:id="@+id/textContrasena"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Contraseña: [Contraseña]"
-            android:textSize="18sp"
-            android:textColor="@color/textSecondary"
-            android:layout_marginBottom="8dp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
 
-        <!-- Ocupación -->
-        <TextView
-            android:id="@+id/textOcupacion"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Ocupación: Cliente"
-            android:textSize="18sp"
-            android:textColor="@color/textSecondary"
-            android:layout_marginBottom="8dp" />
+                    <EditText
+                        android:id="@+id/txtNombreC"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/edittext_background"
+                        android:hint="Ingrese nombre"
+                        android:padding="8dp"
+                        android:textColor="@color/textSecondary" />
 
-        <!-- Correo Electrónico -->
-        <TextView
-            android:id="@+id/textCorreo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Correo Electrónico: [Correo Electrónico]"
-            android:textSize="18sp"
-            android:textColor="@color/textSecondary"
-            android:layout_marginBottom="24dp" />
+                    <ImageButton
+                        android:id="@+id/btnNombre"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:src="@android:drawable/ic_menu_edit" />
+                </LinearLayout>
+            </LinearLayout>
 
-        <!-- Mensaje de Bienvenida -->
-        <TextView
-            android:id="@+id/textBienvenida"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="¡Nos alegra que te unas a la comunidad de servicio de internet y seas usuario de TaskNet!"
-            android:textSize="18sp"
-            android:textColor="@color/textTertiary"
-            android:layout_gravity="center_horizontal" />
+            <!-- Teléfono -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:orientation="vertical">
 
+                <TextView
+                    android:id="@+id/textTelefono"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Teléfono:"
+                    android:textColor="@color/textPrimary"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/txtTelefonoC"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/edittext_background"
+                        android:hint="Ingrese teléfono"
+                        android:padding="8dp"
+                        android:textColor="@color/textSecondary" />
+
+                    <ImageButton
+                        android:id="@+id/btnTelefono"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:src="@android:drawable/ic_menu_edit" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Contraseña -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textContrasena"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Contraseña:"
+                    android:textColor="@color/textPrimary"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/txtPassword"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/edittext_background"
+                        android:hint="Ingrese contraseña"
+                        android:inputType="textPassword"
+                        android:padding="8dp"
+                        android:textColor="@color/textSecondary" />
+
+                    <ImageButton
+                        android:id="@+id/btnPassword"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:src="@android:drawable/ic_menu_edit" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Ocupación -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textOcupacion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ocupación:"
+                    android:textColor="@color/textPrimary"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/txtOcupacion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext_background"
+                    android:hint="CLIENTE"
+                    android:padding="8dp"
+                    android:textColor="@color/textSecondary" />
+            </LinearLayout>
+
+            <!-- Correo Electrónico -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textCorreo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Email:"
+                    android:textColor="@color/textPrimary"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/txtEmailC"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/edittext_background"
+                        android:hint="Ingrese correo electrónico"
+                        android:padding="8dp"
+                        android:textColor="@color/textSecondary" />
+
+                    <ImageButton
+                        android:id="@+id/btnEmail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:src="@android:drawable/ic_menu_edit" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Mensaje de Bienvenida -->
+            <TextView
+                android:id="@+id/textBienvenida"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:text="¡Nos alegra que te unas a la comunidad de servicio de internet y seas usuario de TaskNet!"
+                android:textColor="@color/design_default_color_primary_dark"
+                android:textSize="16sp" />
+        </LinearLayout>
     </LinearLayout>
 </ScrollView>

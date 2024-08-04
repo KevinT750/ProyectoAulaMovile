@@ -1,9 +1,12 @@
 <resources>
     <string name="app_name">Proyecto Aula</string>
+
+    <!-- Arrays existentes -->
     <string-array name="tipo_servicio_array">
         <item>Fibra Óptica</item>
         <item>Inalámbrica</item>
     </string-array>
+
     <string name="title_activity_login">LoginActivity</string>
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Password</string>
@@ -21,9 +24,9 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
 
-    <string name="menu_home">Home</string>
-    <string name="menu_gallery">Gallery</string>
-    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_home">Inicio</string>
+    <string name="menu_gallery">Reportes</string>
+    <string name="menu_slideshow">Cerrar Sesion</string>
     <string name="title_activity_menu_soporte">MenuSoporte</string>
     <string name="title_activity_menu_empleado">MenuEmpleado</string>
     <string name="menu_profile">Mi Perfil</string>
@@ -31,8 +34,29 @@
     <string name="menu_report_issue">Reportar Problema</string>
     <string name="menu_report_history">Historial de Reportes</string>
     <string name="menu_logout">Cerrar Sesión</string>
+
+    <!-- Nuevos Arrays -->
     <string-array name="horarios_array">
         <item>Matutino</item>
         <item>Vespertino</item>
+    </string-array>
+
+    <string-array name="servicios_array">
+        <item>Fibra Óptica</item>
+        <item>Inalámbrica</item>
+    </string-array>
+
+    <string-array name="problemas_array">
+        <item>Conexión lenta</item>
+        <item>Interrupciones frecuentes</item>
+        <item>Problemas de configuración</item>
+        <item>Problemas de señal Wi-Fi</item>
+        <item>Problemas de acceso a ciertos sitios</item>
+        <item>Problemas de red local</item>
+        <item>Problemas con el hardware</item>
+        <item>Problemas con la facturación</item>
+        <item>Problemas de seguridad</item>
+        <item>Problemas de instalación</item>
+        <item>Otros</item>
     </string-array>
 </resources>

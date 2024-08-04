@@ -7,32 +7,32 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:padding="16dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="24dp"
-            android:gravity="center_horizontal">
+            android:padding="16dp">
 
             <TextView
                 android:id="@+id/textReportar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Reportar Problemas"
-                android:textSize="24sp"
+                android:textSize="26sp"
                 android:textStyle="bold"
                 android:textColor="@color/colorPrimary"
-                android:layout_marginBottom="16dp"/>
+                android:layout_marginBottom="24dp"/>
 
             <TextView
                 android:id="@+id/textDescripcion"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="16dp"
                 android:text="Utilice este formulario para reportar cualquier problema que esté experimentando con nuestro servicio de internet. Su retroalimentación es muy valiosa para nosotros y estamos comprometidos a resolver todos los problemas lo más pronto posible."
-                android:textSize="20sp" />
+                android:textSize="18sp"
+                android:layout_marginBottom="24dp"/>
 
             <TextView
                 android:layout_width="match_parent"
@@ -43,8 +43,34 @@
 
             <Spinner
                 android:id="@+id/spinnerHorario"
-                android:layout_width="364dp"
-                android:layout_height="38dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Seleccione el servicio con el que tiene el problema:"
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp"/>
+
+            <Spinner
+                android:id="@+id/spinnerServicio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Seleccione el tipo de problema:"
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp"/>
+
+            <Spinner
+                android:id="@+id/spinnerProblema"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp" />
 
             <TextView
@@ -64,7 +90,7 @@
                 android:minLines="5"
                 android:background="@drawable/edit_text_background"
                 android:padding="12dp"
-                android:layout_marginBottom="16dp"/>
+                android:layout_marginBottom="24dp"/>
 
             <Button
                 android:id="@+id/btnEnviar"
@@ -72,7 +98,9 @@
                 android:layout_height="wrap_content"
                 android:text="Enviar"
                 android:backgroundTint="@color/colorPrimary"
-                android:textColor="@android:color/white"/>
+                android:textColor="@android:color/white"
+                android:padding="12dp"
+                android:textSize="18sp"/>
 
         </LinearLayout>
     </ScrollView>
