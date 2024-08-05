@@ -7,31 +7,31 @@
 
     <fragment
         android:id="@+id/nav_home"
-        android:name="com.example.proyectoaula.ui.home.HomeFragment"
+        android:name="com.example.proyectoaula.ui.Cliente.home.HomeFragment"
         android:label="@string/menu_home"
         tools:layout="@layout/fragment_home" />
 
     <fragment
         android:id="@+id/nav_profile"
-        android:name="com.example.proyectoaula.ui.Perfil.PerfilFragment"
+        android:name="com.example.proyectoaula.ui.Cliente.Perfil.PerfilFragment"
         android:label="@string/menu_profile"
         tools:layout="@layout/fragment_perfil" />
 
     <fragment
         android:id="@+id/nav_services"
-        android:name="com.example.proyectoaula.ui.Servicio.ServicioFragment"
+        android:name="com.example.proyectoaula.ui.Cliente.Servicio.ServicioFragment"
         android:label="@string/menu_services"
         tools:layout="@layout/fragment_servicio"/>
 
     <fragment
         android:id="@+id/nav_report_issue"
-        android:name="com.example.proyectoaula.ui.Reportar.ReportarFragment"
+        android:name="com.example.proyectoaula.ui.Cliente.Reportar.ReportarFragment"
         android:label="@string/menu_report_issue"
         tools:layout="@layout/fragment_reportar"/>
 
     <fragment
         android:id="@+id/nav_report_history"
-        android:name="com.example.proyectoaula.ui.Historial.HistorialFragment"
+        android:name="com.example.proyectoaula.ui.Cliente.Historial.HistorialFragment"
         android:label="@string/menu_report_history"
         tools:layout="@layout/fragment_historial"/>
 

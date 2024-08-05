@@ -1,4 +1,4 @@
-package com.example.proyectoaula.ui.home;
+package com.example.proyectoaula.ui.Cliente.home;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;

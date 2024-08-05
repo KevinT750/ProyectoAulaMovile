@@ -1,4 +1,4 @@
-package com.example.proyectoaula.ui.Reportar;
+package com.example.proyectoaula.ui.Cliente.Reportar;
 
 import androidx.lifecycle.ViewModelProvider;
 
@@ -6,7 +6,6 @@ import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
@@ -31,7 +30,6 @@ import java.io.OutputStreamWriter;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.ArrayList;
-import java.util.List;
 
 public class ReportarFragment extends Fragment {
 

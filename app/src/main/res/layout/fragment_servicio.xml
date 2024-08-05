@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/background_gradient"
     android:padding="16dp"
-    tools:context=".ui.Servicio.ServicioFragment">
+    tools:context=".ui.Cliente.Servicio.ServicioFragment">
 
     <ImageView
         android:id="@+id/imageView5"

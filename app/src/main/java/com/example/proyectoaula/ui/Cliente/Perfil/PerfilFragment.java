@@ -1,4 +1,4 @@
-package com.example.proyectoaula.ui.Perfil;
+package com.example.proyectoaula.ui.Cliente.Perfil;
 
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -29,12 +29,6 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.net.URLEncoder;
-import java.util.HashMap;
-import java.util.Map;
-
-import com.android.volley.Request;
-import com.android.volley.RequestQueue;
-import com.android.volley.toolbox.Volley;
 
 public class PerfilFragment extends Fragment {
 

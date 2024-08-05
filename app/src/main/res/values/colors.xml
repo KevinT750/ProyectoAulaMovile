@@ -11,4 +11,8 @@
     <color name="textTertiary">#BDBDBD</color>
     <color name="backgroundLight">#F5F5F5</color> <!-- Gris claro -->
     <color name="buttonColor">#FF6200EE</color> <!-- Color de fondo de los botones -->
+    <color name="colorText">#333333</color>
+    <color name="colorBackground">#F5F5F5</color>
+    <color name="colorBorder">#DDDDDD</color>
+
 </resources>

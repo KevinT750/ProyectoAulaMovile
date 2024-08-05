@@ -1,4 +1,4 @@
-package com.example.proyectoaula.ui.Perfil;
+package com.example.proyectoaula.ui.Cliente.Perfil;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;

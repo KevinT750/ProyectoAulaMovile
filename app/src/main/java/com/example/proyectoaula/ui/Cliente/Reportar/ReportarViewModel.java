@@ -1,4 +1,4 @@
-package com.example.proyectoaula.ui.Reportar;
+package com.example.proyectoaula.ui.Cliente.Reportar;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
